@@ -6,4 +6,4 @@ RUN \
  DEBIAN_FRONTEND=noninteractive apt-get -y install zmap --fix-missing && \
  DEBIAN_FRONTEND=noninteractive apt-get -y autoremove && \
  DEBIAN_FRONTEND=noninteractive apt-get clean
-CMD ["zmap"]
+ENTRYPOINT ["zmap"]
